@@ -39,22 +39,52 @@ for(i = 0; i < 24; i++) {
 // Create input fields for each time slot
 for(i = 0; i < 24; i++) {
     var inputEl = document.createElement("INPUT");
-    inputEl.setAttribute("type", "text");
+    var edValue = document.getElementById("edValue");
+    var s = edValue.value;
+
+    var lblValue = document.getElementById("lblValue");
+    Object.assign(inputEl, { 
+        type: "text",
+        className: "input-field i" + i,
+        onInput: edValueKeyPress()
+    });
     inputEl.style.width = "100%";
     inputEl.style.backgroundColor="gainsboro";
     colMid[i].innerText = "";
     colMid[i].appendChild(inputEl);
 }
-
+console.log(inputEl)
 // Create Buttons for right column
 for(i = 0; i < 24; i++) {
     var buttonEl = document.createElement("button");
     Object.assign(buttonEl, {
-        className: 'button '+ i,
+        className: 'button b'+ i,
         type: 'button',
+        onclick: function(){
+            inputVal = document.getElementsByClassName("input-field");
+            var val = inputVal.value;
+            colMid.innerText = val;
+            console.log(colMid.innerText);
+        }
     });
     colRight[i].innerText = "";
     colRight[i].appendChild(buttonEl);
 }
 
 // Create eventlistener for when a button is pressed 
+buttonSelected = document.querySelectorAll('.button')
+inputField = document.querySelectorAll('.input-field');
+console.log(buttonSelected);
+
+
+function getInputValue(){
+    var inputVal = inputField[Number]
+
+}
+function edValueKeyPress() {
+    var edValue = document.getElementById("edValue");
+    var s = edValue.value;
+
+    var lblValue = document.getElementById("lblValue");
+    lblValue.innerText = "The text box contains: " + s;
+}

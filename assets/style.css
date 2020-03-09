@@ -47,6 +47,7 @@ html, body {
     border: 2px cornflowerblue solid;
     opacity: .8;
 }
+
 .footer {
     text-align: center;
     margin-top: 50px;
@@ -57,4 +58,12 @@ html, body {
     height: 35px;
     width: 140px;
     background-image: url(./favicon_io/favicon-32x32.png);
+}
+.button:hover {
+    height: 38px;
+    width: 143px;
+}
+
+.input-field {
+    background-color: red;
 }
