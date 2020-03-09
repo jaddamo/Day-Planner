@@ -11,9 +11,9 @@
 - Next, create body `Container` 
 - Create 24 `row` with 3 `col` each
  
-- Set the first column to 1 , the middle column to 10, and the last column to 1:
+- Set the first column to 2 , the middle column to 8, and the last column to 2:
 
- `col-sm-1` `col-md-1` `col-lg-1` / `col-sm-10` `col-md-10` `col-lg-10` / `col-sm-1` `col-md-1` `col-lg-1` 
+ `col-sm-2` `col-md-2` `col-lg-2` / `col-sm-8` `col-md-8` `col-lg-10` / `col-sm-2` `col-md-2` `col-lg-2` 
 - Assign a `Class` to each `row`, to corellate with the **current time**
 - Assign an **ID** to each `col`
 - Create a `Form` for each middle column for the input type

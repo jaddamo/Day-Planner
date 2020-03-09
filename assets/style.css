@@ -1,0 +1,60 @@
+html, body {
+    width: 100%;
+    height: 35px;
+    margin-top: 0;
+    background-color:cornflowerblue;
+}
+
+.intro, .jumbotron {
+    text-align: center;
+    background-color: aquamarine;
+    font-family: 'Permanent Marker', cursive;
+    box-sizing: border-box;
+}
+
+#intro-title {
+    font-size: 72px;
+}
+.body-container {
+    background-color: cornflowerblue;
+    padding: 20px;
+    border: 20px burlywood solid;
+    border-radius: 10px;
+    overflow: auto;
+    height: fit-content;
+    max-height: 1000px;
+}
+.middle-col, .left-col, .right-col{
+    text-align: center;
+}
+
+.grid-container {
+    height: fit-content;
+    max-height: 500px;
+    overflow: auto;
+    border: 5px blanchedalmond solid;
+    border-radius: 5px;
+}
+
+.left-col {
+    background-color: blanchedalmond;
+    border: 2px cornflowerblue solid;
+    border-radius: 5px;
+    position: relative;    
+}
+
+.middle-col {
+    border: 2px cornflowerblue solid;
+    opacity: .8;
+}
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.button{
+    height: 35px;
+    width: 140px;
+    background-image: url(./favicon_io/favicon-32x32.png);
+}
